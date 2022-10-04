@@ -2,11 +2,11 @@
   "name": "node-restapi",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "server.js",
   "type": "module",
   "scripts": {
-    "start": "npm src/app.js",
-    "dev": "nodemon src/app.js",
+    "start": "node src/server.js",
+    "dev": "nodemon src/serverjs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
