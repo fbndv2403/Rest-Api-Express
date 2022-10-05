@@ -1,6 +1,6 @@
 import request from "supertest";
+import { describe, it } from "vitest";
 import app from "../src/models/app.js";
-//import requestWithSupertest from request(app);
 
 describe("Main Endpoints", () => {
   it("GET / should show all users", async () => {
