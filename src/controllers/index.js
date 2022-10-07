@@ -1,7 +1,8 @@
-import { getUser } from "./user.controller.js"
+import { getUser, postUser} from "./user.controller.js"
 
 const controllers = {
     getUser,
+    postUser
 }
 
 export default controllers

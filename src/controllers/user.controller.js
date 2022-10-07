@@ -9,3 +9,13 @@ export const getUser = (req = Request, res= Response) => {
         console.error(error)
     }
 }
+
+export const postUser = (req = Request, res= Response) => {
+    try {
+        res.status(201).json({ route: "post 201 created"})
+    } catch (error) {
+        res.status(505).json({ msg: "505 problem on the server"})
+        console.error(error)
+    }
+}
+
