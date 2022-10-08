@@ -3,7 +3,9 @@ import controllers from "../controllers/index.js";
 
 const router = Router();
 
-router.get("/get", controllers.getUser)
-router.post("/post/", controllers.postUser)
+router.get("/get", controllers.getUser);
+router.post("/post/", controllers.postUser);
+router.put("/put", controllers.putUser);
+router.delete("/delete", controllers.deleteUser);
 
-export default router
+export default router;
