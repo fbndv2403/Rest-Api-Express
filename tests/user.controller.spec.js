@@ -1,17 +1,16 @@
 import request from "supertest";
-import assert from "assert";
 import app from "../src/models/app.js";
 
-describe("Main Endpoints", () => {
+describe("/api/get", () => {
   it("GET /api/get should route: get", async () => {
-    const res = await request(app)
+    await request(app)
       .get("/api/get")
       .expect(200)
       .expect("Content-Type", /json/);
   });
 });
 
-describe("Post Endpoint", () => {
+describe("/api/post", () => {
   it("POST /api/post route: post 201 created", async () => {
     await request(app)
       .post("/api/post")
@@ -20,7 +19,7 @@ describe("Post Endpoint", () => {
   });
 });
 
-describe("Put Endpoint", () => {
+describe("/api/put", () => {
   it("PUT /api/put route: put 201 created", async () => {
     await request(app)
       .put("/api/put")
@@ -29,7 +28,7 @@ describe("Put Endpoint", () => {
   });
 });
 
-describe("Delete Endpoint", () => {
+describe("/api/delete", () => {
   it("DELETE /api/delete route: delete 202 acepted", async () => {
     await request(app)
       .delete("/api/delete")
