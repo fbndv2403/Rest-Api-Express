@@ -1,5 +1,5 @@
 import app from "./models/app.js";
-const PORT = 8080;
+import { PORT } from "./config.js";
 
 app.listen(PORT, () => {
   console.log(`Server on port ${PORT}`);
