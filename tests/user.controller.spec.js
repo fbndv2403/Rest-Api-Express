@@ -1,4 +1,5 @@
 import request from "supertest";
+import assert from "assert"
 import app from "../src/models/app.js";
 
 describe("/api/get", () => {
@@ -6,8 +7,6 @@ describe("/api/get", () => {
     await request(app)
       .get("/api/get")
       .expect(200)
-      .expect("Content-Type", /json/);
-  });
 });
 
 describe("/api/post", () => {
@@ -35,4 +34,4 @@ describe("/api/delete", () => {
       .expect(202)
       .expect("Content-Type", /json/);
   });
-});
+})});

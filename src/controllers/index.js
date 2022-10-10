@@ -1,7 +1,7 @@
-import { getUser, postUser, putUser, deleteUser } from "./user.controller.js";
+import { getClients, postUser, putUser, deleteUser } from "./user.controller.js";
 
 const controllers = {
-  getUser,
+  getClients,
   postUser,
   putUser,
   deleteUser,

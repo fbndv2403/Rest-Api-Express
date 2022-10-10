@@ -3,8 +3,8 @@ import { DB_HOST, DB_DATABASES, DB_PASSWORD, DB_PORT, DB_USER} from '../config.j
 
 export const pool = createPool({
     host: DB_HOST,
-    user: "fabian",
-    password: "admin",
+    user: DB_USER,
+    password: DB_PASSWORD,
     port: DB_PORT,
     database: DB_DATABASES,
 });

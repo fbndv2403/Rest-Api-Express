@@ -2,7 +2,7 @@ import pkg from "express";
 import { pool } from "../db/connection.js";
 const { Request, Response } = pkg;
 
-export const getUser = async (req = Request, res = Response) => {
+export const getClients = async (req = Request, res = Response) => {
   try {
     const [rows] = await pool.query("SELECT * FROM clients");
     res.json(rows)
