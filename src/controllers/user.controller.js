@@ -1,4 +1,5 @@
 import pkg from "express";
+import { pool } from "../db/connection";
 const { Request, Response } = pkg;
 
 export const getUser = (req = Request, res = Response) => {
